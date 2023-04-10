@@ -2,15 +2,14 @@
 
 let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 
-// let sortedBand = touristSpots.forEach(band => band.replace(('a'),'')
-// 									 );
 function removeArticle(str){
 	let words = str.split(' ');
-
-	// words.map((word)=>{
-	// 	if()
-	// })
-	if(words.length > 1 && (words[0].toLowerCase()==='a' || words[0].toLowerCase()==='an' || words[0].toLowerCase()==='the')){
+	
+	if(words.length > 1 && (words[0].toLowerCase()==='a'
+							|| words[0].toLowerCase()==='an'
+							|| words[0].toLowerCase()==='the'
+						   )
+		){
 		words.splice(0,1);
 	}
 	return words.join(" ");
@@ -22,8 +21,6 @@ touristSpots.sort((a,b)=>{
 
 	return bandA.localeCompare(bandB);
 })
-
-// console.log(touristSpots);
 
 let ul = document.getElementById("band");
 
