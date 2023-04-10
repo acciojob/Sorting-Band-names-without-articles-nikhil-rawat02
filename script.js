@@ -25,7 +25,7 @@ touristSpots.sort((a,b)=>{
 
 // console.log(touristSpots);
 
-let ui = document.getElementById("band");
+let ul = document.getElementById("band");
 
 touristSpots.forEach(band => {
 	let li = document.createElement('li');
